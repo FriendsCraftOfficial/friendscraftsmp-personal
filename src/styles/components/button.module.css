@@ -1,0 +1,22 @@
+.button button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 5px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 12px;
+    background: #07B38C;
+    color: #fff;
+}
+.button button:hover {
+    background: #22BE9B;
+}
+.button img {
+    width: 20px;
+}

@@ -1,0 +1,28 @@
+.row {
+    width: 100%;
+    /* background: #fcfcfc; */
+}
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+  }
+  /* Data.map css */
+  .no1{
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    /* padding: 20px;
+    background: red; */
+  }
+  .no1:hover{
+    transform: scale(1.05);
+  }
+  /* Data.map css */

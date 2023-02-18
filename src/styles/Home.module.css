@@ -1,8 +1,20 @@
 .main {
+  text-align: center;
+  color: white;
+}
+.btn {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  justify-content: center;
+  margin-top: 25px;
+}
+.head{
+  margin-top: 5%;
+}
+.head .image {
+  width: 700px;
+  height: 38px;
+}
+.h2 {
+  margin-top: auto;
+  font-size: 28px;
 }
