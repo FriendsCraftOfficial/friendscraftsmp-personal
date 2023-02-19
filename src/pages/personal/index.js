@@ -1,17 +1,15 @@
-import data from "../../data/personal.json";
 import { React, useState } from "react";
+import { useRouter } from "next/router";
 import styles from "@/styles/personal.module.css"
+import data from "../../../data/personal.json";
 
-function Personal() {
-    const [widgetmenu, setwidgetmenu] = useState(false);
+
+function Index() {
     const [profile, setProfile] = useState("");
-    const handleclose = () => {
-      setwidgetmenu(false);
-    };
-  
-    const setDialogData = (e) => {
-      setProfile(e);
-      setwidgetmenu(true);
+    const router = useRouter();
+
+    const handleClick = (e) => {
+      router.push("/personal/data/" + e);
     };
   return (
     <div className={styles.row}>
@@ -21,14 +19,14 @@ function Personal() {
               <div
                 className={styles.no1}
                 key={key}
-                onClick={() => setDialogData(index)}
+                onClick={() => handleClick(key)}
               >
                 <img
                   style={{
                     width: "100%",
                     height: "100%",
                   }}
-                  src={index.img + String(key).padStart(2, "0") + ".jpg"}
+                  src={index.img + String(key).padStart(2, "0") + ".png"}
                   // src={index.img + String(key + 1).padStart(2, "0") + ".jpg"}
                   // teach me : @Br6wnDev //
                   alt="FRIENDSCRAFT MEMBERS"
@@ -40,4 +38,4 @@ function Personal() {
     </div>
   );
 }
-export default Personal;
+export default Index;
