@@ -5,7 +5,6 @@ import data from "../../../data/personal.json";
 
 
 function Index() {
-    const [profile, setProfile] = useState("");
     const router = useRouter();
 
     const handleClick = (e) => {

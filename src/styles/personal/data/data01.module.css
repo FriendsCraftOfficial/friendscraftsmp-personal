@@ -1,9 +1,134 @@
 .container {
     width: 100%;
+    color: white;
+    margin: 14px auto;
 }
-.data_name,
+.data_name {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.icon_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 3px;
+    font-size: 40px;
+    color: #17d5a0;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 3px;
+    font-size: 20px;
+}
+
+.logo,
+.data_header,
+.data_bottom,
 .data_favsay {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.data_header {
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1;
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.data_favsay {
+    color: rgb(235, 235, 235);
+}
+
+.data_main {
+    display: flex;
+    justify-content: center;
+    color: #17d5a0;
+}
+
+.data_bottom {
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: .5;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.data_favsay {
+    font-size: 20px;
+}
+
+.left {
+    width: 380px;
+    height: 100px;
+    
+}
+.follower, .size {
+    margin-top: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.follower, .size:hover {
+    color: #ffffff !important;
+}
+
+.hr_text {
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    border: 0;
+    height: 1.2em;
+}
+
+.hr_text:before {
+    content: "";
+    background: linear-gradient(to right, transparent, #b2b2b2, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr_text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 0.5em;
+    line-height: 1em;
+    color: rgb(109, 255, 109);
+    background-color: #2b3834;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.logo {
+    transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
 }
