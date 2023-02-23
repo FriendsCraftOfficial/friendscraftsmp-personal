@@ -13,8 +13,12 @@
     justify-content: center;
     align-items: center;
     margin: auto 3px;
-    font-size: 40px;
+    font-size: 34px !important;
     color: #17d5a0;
+}
+.iconp {
+    margin: 3px;
+    color: white;
 }
 .icon {
     display: flex;
@@ -40,7 +44,13 @@
     font-size: 38px;
     color: #ffffff;
 }
-
+.data_dream {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #17d5a0;
+}
 .data_favsay {
     color: rgb(235, 235, 235);
 }
@@ -81,7 +91,7 @@
 
 .hr_text {
     text-align: center;
-    font-size: 35px;
+    font-size: 26px;
     position: relative;
     border: 0;
     height: 1.2em;
@@ -111,6 +121,11 @@
 .btn {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.btn Button {
+    width: 140px !important;
 }
 
 @keyframes float {

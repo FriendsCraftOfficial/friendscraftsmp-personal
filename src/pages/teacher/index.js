@@ -1,14 +1,14 @@
 import { React, useState } from "react";
 import { useRouter } from "next/router";
-import styles from "../../styles/personal.module.css"
-import data from "../../../data/personal.json";
+import styles from "../../styles/personal/teacher.module.css"
+import data from "../../../data/teacher.json";
 
 
-function Index() {
+function Teacher() {
     const router = useRouter();
 
     const handleClick = (e) => {
-      router.push("/personal/data/" + e);
+      router.push("/teacher/data/" + e);
     };
   return (
     <div className={styles.row}>
@@ -37,4 +37,4 @@ function Index() {
     </div>
   );
 }
-export default Index;
+export default Teacher;

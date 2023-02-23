@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  gap: 25px;
 }
 .head{
   margin-top: 5%;

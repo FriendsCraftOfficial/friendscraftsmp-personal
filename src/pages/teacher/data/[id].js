@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "../../../styles/personal/data/data01.module.css";
-import data from "../../../../data/personal.json";
+import data from "../../../../data/teacher.json";
 import Button from "components/Button";
 //MAIN DATA//
 
@@ -18,10 +18,10 @@ function data01() {
   const { id } = router.query;
 
   const handlePer = (e) => {
-    router.push("/personal");
+    router.push("/teacher");
   };
 
-  const handleHome = (e) => {
+  const handleClick = (e) => {
     router.push("/");
   };
   return (
@@ -29,7 +29,7 @@ function data01() {
       <div className={styles.container}>
         <div className={styles.logo}>
           <Image
-            src={"/img/FSC/" + String(id).padStart(2, "0") + ".png"}
+            src={"/img/FSC/Teacher/" + String(id).padStart(2, "0") + ".png"}
             width={210}
             height={210}
             className={styles.img}
@@ -70,10 +70,6 @@ function data01() {
               <span className={styles.iconp}>◈</span>
               น้ำหนัก: {data[id]?.weight}
             </div>
-            <div className={styles.data_teacher}>
-              <span className={styles.iconp}>◈</span>
-              อาจารย์ประจำชั้น: {data[id]?.teacher}
-            </div>
           </div>
 
           <div className={styles.right}>
@@ -87,20 +83,20 @@ function data01() {
               <span className={styles.iconp}>◈</span>
               งานอดิเรก: {data[id]?.hobby}
             </div>
-            <div className={styles.data_stats_room}>
+            <div className={styles.data_stats_school}>
               <span className={styles.iconp}>◈</span>
-              สถานะในห้องเรียน: {data[id]?.stats_room}
+              สถานะในโรงเรียน: {data[id]?.stats_school}
             </div>
-            <div className={styles.data_st_room}>
+            <div className={styles.t_room}>
               <span className={styles.iconp}>◈</span>
-              เป็นนักเรียนห้อง: {data[id]?.st_room}
+              เป็นอาจารย์ประจำชั้นห้อง: {data[id]?.t_room}
             </div>
           </div>
         </div>
         <div className={styles.data_dream}>
-              <span className={styles.iconp}>◈</span>
-              ความฝัน: {data[id]?.dream}
-            </div>
+          <span className={styles.iconp}>◈</span>
+          ความฝัน: {data[id]?.dream}
+        </div>
         {/* ประวัติส่วนตัว */}
         <br />
         <br />
@@ -132,10 +128,10 @@ function data01() {
               <span className={styles.iconp}>◈</span>
               สัตว์ที่ชอบ: {data[id]?.fav_animal}
             </div>
-            <div className={styles.fav_subject}>
-                <span className={styles.iconp}>◈</span>
-                วิชาที่ชอบ: {data[id]?.fav_subject}
-              </div>
+            <div className={styles.t_subject}>
+              <span className={styles.iconp}>◈</span>
+              วิชาที่สอน: {data[id]?.t_subject}
+            </div>
           </div>
           <div className={styles.right}>
             <div className={styles.data_height}>
@@ -158,7 +154,7 @@ function data01() {
         </div>
         {/* ความชอบ/ไม่ชอบ */}
         <div className={styles.btn}>
-          <div onClick={handleHome}>
+          <div onClick={handleClick}>
             <Button
               link="/"
               icon="/img/home.svg"

@@ -7,16 +7,16 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 150px;
   }
   /* Data.map css */
   .no1{
-    width: 10rem;
-    height: 10rem;
+    width: 17rem;
+    height: 17rem;
     overflow: hidden;
     /* border-radius: 100%; */
     margin-left: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     transition: 0.5s;
     cursor: pointer;
     /* padding: 20px;
@@ -26,7 +26,7 @@
     
   }
   .no1:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   /* Data.map css */
 
