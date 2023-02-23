@@ -1,6 +1,6 @@
 import styles from ".././styles/Home.module.css";
 import Image from "next/image";
-import Button from "components/button";
+import Button from "../../components/Button";
 import { useRouter } from "next/router";
 
 export default function Home() {
