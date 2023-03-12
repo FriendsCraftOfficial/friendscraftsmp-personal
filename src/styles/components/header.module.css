@@ -1,0 +1,25 @@
+.beta_version {
+    padding: 5px 25px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 90%;
+    background: #ffd04e;
+    border-radius: 30px;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #000;
+    z-index: 1000000;
+    animation: pluse 3s ease infinite
+}
+
+@keyframes pluse {
+    0% {
+        transform: translateX(-50%) scale(1)
+    }
+
+    50% {
+        transform: translateX(-50%) scale(1.1)
+    }
+}
